@@ -19,15 +19,18 @@ Provided multiple medical textual input prompts (minimum of 5) to guide the gene
 Generated synthetic X-ray images using the generative model.
 Saved the generated images in a folder-based dataset structure.
 Displayed sample generated outputs for visual verification of anatomical structure.
+
 Tools & Technologies
 Python
 Google Colab
 Stable Diffusion
 PyTorch
 Hugging Face Diffusers Library
+
 Output
 A synthetic X-ray dataset generated using a pre-trained generative AI model.
 Images stored in an organized folder structure.
 Sample outputs displayed to verify data quality and anatomical realism.
+
 Conclusion
 This experiment demonstrates how Generative AI models can be used to efficiently create synthetic medical datasets. The generated data can be further utilized for tasks such as training diagnostic machine learning models, data augmentation for rare conditions, and experimentation, especially in medical scenarios where real-world patient data is privacy-sensitive or limited.
