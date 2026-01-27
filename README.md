@@ -1,5 +1,6 @@
 # CSET419-Gen-AI-E23CSEU1603
 
+# LAB-1
 Objective
 The objective of this experiment is to understand the fundamentals of Generative AI by generating synthetic medical imaging data using a pre-trained generative model. Students will learn how to use Python-based tools to generate, store, and visualize synthetic X-ray samples.
 
