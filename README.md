@@ -38,7 +38,7 @@ This experiment demonstrates how Generative AI models can be used to efficiently
 
 
 
-#LAB-2
+# LAB-2
 Summary
 This week's project focuses on building and training a Generative Adversarial Network (GAN) to generate synthetic images of handwritten digits that resemble the MNIST dataset. The quality of these generated images is then evaluated using a pre-trained LeNet-5 classifier.
 
