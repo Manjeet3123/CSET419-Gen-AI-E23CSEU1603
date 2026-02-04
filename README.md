@@ -74,26 +74,26 @@ In this experiment, we explore the capabilities of VAEs in learning continuous, 
      . Probabilistic Encoder: Maps inputs to a distribution (defined by mean μ and variance σ ).
      . Decoder: Reconstructs images from sampled latent vectors.
 # Methodology
-Dataset Preparation: Loaded and preprocessed the Fashion-MNIST dataset.
-Architecture Design:
-Implemented an Encoder to compress input images into a lower-dimensional latent distribution.
-Applied the Reparameterization Trick to enable backpropagation through stochastic sampling.
-Implemented a Decoder to reconstruct the original image from the sampled latent vectors.
-Training Process: Trained the model by minimizing a dual loss function:
-Reconstruction Loss: Ensures the output visually resembles the input.
-KL Divergence: Regularizes the learned distribution to approximate a standard normal distribution.
-Analysis & Visualization:
-Reconstruction Analysis: Plotting original inputs against reconstructed versions to check data compression quality.
-Generative Sampling: generating completely new images by sampling random noise vectors ($z \sim \mathcal{N}(0,1)$).
-Latent Space Visualization: Projecting the test dataset into a 2D latent space to visualize clustering of class labels.
-Tools & Technologies
-Language: Python
-Platform: Google Colab
-Framework: PyTorch
-Visualization: Matplotlib
-Key Outputs
-Reconstruction Grid: A visual comparison of original Fashion-MNIST images (Top row) vs. VAE-reconstructed counterparts (Bottom row) to verify feature retention.
-Generative Samples: A grid of distinct, newly generated fashion items created solely from random noise.
-Latent Space Scatter Plot: A 2D scatter plot where data points are colored by class label, demonstrating how the model groups semantically similar items (e.g., T-shirts vs. Trousers) in the latent space.
-Conclusion
+1 .Dataset Preparation: Loaded and preprocessed the Fashion-MNIST dataset.
+2 Architecture Design:
+ . Implemented an Encoder to compress input images into a lower-dimensional latent distribution.
+ . Applied the Reparameterization Trick to enable backpropagation through stochastic sampling.
+ . Implemented a Decoder to reconstruct the original image from the sampled latent vectors.
+3 Training Process: Trained the model by minimizing a dual loss function:
+ . Reconstruction Loss: Ensures the output visually resembles the input.
+ . KL Divergence: Regularizes the learned distribution to approximate a standard normal distribution.
+4 Analysis & Visualization:
+ . Reconstruction Analysis: Plotting original inputs against reconstructed versions to check data compression quality.
+ . Generative Sampling: generating completely new images by sampling random noise vectors ($z \sim \mathcal{N}(0,1)$).
+ . Latent Space Visualization: Projecting the test dataset into a 2D latent space to visualize clustering of class labels.
+# Tools & Technologies
+. Language: Python
+. Platform: Google Colab
+. Framework: PyTorch
+. Visualization: Matplotlib
+# Key Outputs
+1.Reconstruction Grid: A visual comparison of original Fashion-MNIST images (Top row) vs. VAE-reconstructed counterparts (Bottom row) to verify feature retention.
+2.Generative Samples: A grid of distinct, newly generated fashion items created solely from random noise.
+3.Latent Space Scatter Plot: A 2D scatter plot where data points are colored by class label, demonstrating how the model groups semantically similar items (e.g., T-shirts vs. Trousers) in the latent space.
+# Conclusion
 This experiment validates the effectiveness of Variational Autoencoders in learning structured data representations. The reconstruction results demonstrate the model's ability to capture essential features, while the generative samples prove it can synthesize novel data points. Furthermore, the latent space visualization confirms that the VAE successfully clusters semantically similar items, proving its utility for unsupervised learning and creative generation tasks.
