@@ -79,15 +79,25 @@ In this experiment, we explore the capabilities of VAEs in learning continuous, 
 1 .Dataset Preparation: Loaded and preprocessed the Fashion-MNIST dataset.
 2 Architecture Design:
  . Implemented an Encoder to compress input images into a lower-dimensional latent distribution.
+ 
  . Applied the Reparameterization Trick to enable backpropagation through stochastic sampling.
+ 
  . Implemented a Decoder to reconstruct the original image from the sampled latent vectors.
+ 
 3 Training Process: Trained the model by minimizing a dual loss function:
+
  . Reconstruction Loss: Ensures the output visually resembles the input.
+ 
  . KL Divergence: Regularizes the learned distribution to approximate a standard normal distribution.
+ 
 4 Analysis & Visualization:
+
  . Reconstruction Analysis: Plotting original inputs against reconstructed versions to check data compression quality.
+ 
  . Generative Sampling: generating completely new images by sampling random noise vectors ($z \sim \mathcal{N}(0,1)$).
+ 
  . Latent Space Visualization: Projecting the test dataset into a 2D latent space to visualize clustering of class labels.
+ 
 # Tools & Technologies
 . Language: Python
 . Platform: Google Colab
