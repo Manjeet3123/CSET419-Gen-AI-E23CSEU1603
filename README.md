@@ -58,21 +58,22 @@ Image Generation and Classification: After training, the generator produces a se
 Performance Evaluation: The accuracy of the LeNet-5 classifier on the GAN-generated images is calculated to assess the quality and realism of the synthetic digits. A detailed breakdown of predictions is also provided to offer insights into the classifier's performance on individual images.
 
 
-#LAB-3
+# LAB-3
+
 Summary
-Objective
+# Objective
 The objective of this experiment is to implement and analyze a Variational Autoencoder (VAE). The goal is to design Encoder-Decoder architectures that learn a probabilistic latent space, allowing for both the efficient reconstruction of input data and the generation of diverse new synthetic samples by sampling from a learned distribution.
 
-#Experiment Overview
+# Experiment Overview
 In this experiment, we explore the capabilities of VAEs in learning continuous, structured representations of data. Unlike standard autoencoders which simply memorize inputs, VAEs learn a "smooth" latent space. The task involves training a model on fashion items to understand distinct features (e.g., the structural difference between a boot and a sneaker) and utilizing this understanding to generate novel clothing designs from random noise.
 
-#Domain & Model
+# Domain & Model
  .Domain Selected: Fashion-MNIST
     .A dataset of 28x28 grayscale images representing 10 categories of clothing and accessories.
 .Generative Model: Variational Autoencoder (VAE)
      . Probabilistic Encoder: Maps inputs to a distribution (defined by mean μ and variance σ ).
      . Decoder: Reconstructs images from sampled latent vectors.
-#Methodology
+# Methodology
 Dataset Preparation: Loaded and preprocessed the Fashion-MNIST dataset.
 Architecture Design:
 Implemented an Encoder to compress input images into a lower-dimensional latent distribution.
