@@ -121,3 +121,12 @@ In this experiment, we explore the capabilities of VAEs in learning continuous, 
 # Conclusion
 
 This experiment validates the effectiveness of Variational Autoencoders in learning structured data representations. The reconstruction results demonstrate the model's ability to capture essential features, while the generative samples prove it can synthesize novel data points. Furthermore, the latent space visualization confirms that the VAE successfully clusters semantically similar items, proving its utility for unsupervised learning and creative generation tasks.
+
+# LAB-4
+. N-Gram Model: Implemented statistical n-gram based text generation using bigram sequences and random sampling.
+. LSTM Text Generation: Built an RNN/LSTM architecture with embedding layer to generate contextually relevant text sequences.
+. Transformer Architecture: Implemented a custom Transformer model with multi-head self-attention, positional embeddings, and feed-forward networks.
+. Custom Corpus: Trained models on a curated dataset of 40+ sentences covering AI, machine learning, and NLP topics.
+. Model Comparison: Analyzed trade-offs between statistical models, sequential neural networks, and attention-based transformers.
+. Text Generation: Generated meaningful text using seed words with all three model architectures.
+. Attention Mechanisms: Explored parallel processing and contextual understanding using transformer self-attention.
